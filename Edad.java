@@ -23,6 +23,10 @@ public class Edad {
         if (mes_actual < mes_nacimiento || (mes_actual == mes_nacimiento && dia_actual < dia_nacimiento)) {
 
             edad = edad - 1;
+            System.out.println("No ha cumplido años aún");
+        }
+        else{
+            System.out.println("Ya cumplió años");
         }
 
         System.out.println("Su edad es: " + edad + " años");
